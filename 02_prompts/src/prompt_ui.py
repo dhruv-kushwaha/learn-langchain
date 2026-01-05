@@ -24,6 +24,8 @@ style_input = st.selectbox( "Select Explanation Style", ["Beginner-Friendly", "T
 
 length_input = st.selectbox( "Select Explanation Length", ["Short (1-2 paragraphs)", "Medium (3-5 paragraphs)", "Long (detailed explanation)"] )
 
+#PromptTemplate allows you to generate the prompt from the template and save it in a json file enhancing the reusability of the file.
+
 template = load_prompt("template.json")
 
 prompt = template.invoke({
